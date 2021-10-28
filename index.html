@@ -6,11 +6,6 @@
         <title>This is my example homepage.</title>
     </head>
     <body>
-        <p>
-            This is some text.
-        </p>
-        <p>
-            This is some more text.
         </p>
         <div id="myviz">
         </div>
@@ -18,8 +13,8 @@
     <script>
         mySpec = {
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "data": {"url": "data/building_inventory.csv"},
-    "mark": "point",
+    "data": {"url": "building_inventory.csv"},
+    "mark": "circle",
     "encoding": {
         "x": {"field": "Year Acquired", "type": "quantitative"},
         "y": {"field": "Year Constructed", "type": "quantitative"}
