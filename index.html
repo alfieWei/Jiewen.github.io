@@ -7,7 +7,7 @@
     </head>
     <body>
         <p>
-            The relationship between Year acquired and Year contructed
+            The relationship of the sum of Square Footage  and Year Constructed 
             
         </p>
          
@@ -23,8 +23,8 @@
     
     "mark": "bar",
     "encoding": {
-       "x": {"field": "Year Acquired", "type": "quantitative", "bin": true},
-        "y": {"field":"Year Constructed",  "type": "quantitative"}
+      "x": {"field": "Year Constructed","type":"quantitative", "bin": true},
+        "y": {"field":"Square Footage",  "aggregate":"sum", "type": "quantitative"}
 
     }
   };
