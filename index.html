@@ -3,7 +3,7 @@
         <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
         <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
         <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-        <title>This is my example homepage.</title>
+        <title>Visualization</title>
     </head>
     <body>
         </p>
@@ -14,10 +14,11 @@
         mySpec = {
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
     "data": {"url": "building_inventory.csv"},
-    "mark": "circle",
+    "mark": "bar",
+     
     "encoding": {
-        "x": {"field": "Year Acquired", "type": "quantitative"},
-        "y": {"field": "Year Constructed", "type": "quantitative"}
+       "x": {"field": "City", "type": "quantitative", "bin": true},
+        "y": {"aggregate": "count", "type": "quantitative"},
     }
   };
         vegaEmbed('#myviz', mySpec);
