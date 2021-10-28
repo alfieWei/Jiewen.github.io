@@ -13,10 +13,9 @@
     <script>
         mySpec = {
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "data": {  "url": "/Users/weijiewen/Desktop/building_inventory.csv"},
-     "format":{"type": "csv"},
+    "data": { "url": "Users/weijiewen/Desktop/building_inventory.csv"},
+    "format":{"type": "csv"},
     "mark": "bar",
-     
     "encoding": {
        "x": {"field": "City", "type": "quantitative", "bin": true},
         "y": {"aggregate": "count", "type": "quantitative"},
